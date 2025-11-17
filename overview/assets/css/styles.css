@@ -1,0 +1,116 @@
+body {
+  font-family: "Mulish", sans-serif;
+  background-color: #f8f9fa;
+}
+
+.nav-link:hover, .nav-link:hover i {
+  color: white !important;
+}
+
+.userProfile {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid gray;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sidebar-mobile {
+  width: 240px !important;
+  background-color: #212529;
+}
+
+.sidebar-desktop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100vh;
+  background-color: #212529;
+  color: white;
+  z-index: 1000;
+  overflow-y: auto;
+  display: none;
+}
+
+.cardtitle p {
+  font-size: 12px;
+}
+
+.trend span {
+  font-size: 12px;
+}
+
+.card-label {
+  font-size: 14px;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.card-value {
+  font-size: 25px;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 12px;
+}
+
+.stats {
+  font-size: 14px;
+  color: #6c757d;
+  font-weight: 600;
+}
+
+.card {
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+.card:hover {
+  border-color: rgb(99, 111, 244);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.dataCard {
+  border: 1px solid #d1d2d4;
+  cursor: pointer;
+}
+.dataCard:hover {
+  border-color: rgb(99, 111, 244);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.ticket-row:hover p {
+  color: rgb(99, 111, 244) !important;
+  font-weight: 600;
+}
+
+@media (min-width: 850px) {
+  .sidebar-desktop {
+    display: block;
+  }
+  .mainContent,
+  .title {
+    margin-left: 260px;
+  }
+  .cardtitle p,
+  .trend span {
+    font-size: 14px;
+  }
+  .card-custom {
+    padding: 20px;
+  }
+  .card-label {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+  .card-value {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+}/*# sourceMappingURL=styles.css.map */

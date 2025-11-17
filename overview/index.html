@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Overview Page</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!-- Bootstrap icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- Google fonts for typeface-->
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+        <!-- Custom Style CSS -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- I added custom CSS for hover effects and some style customization. 
+        When you hover on the sidebar “Dashboard Kit,” the text turns white. 
+        The cards border turn blue when hovered. 
+        The text under ‘Unresolved tickets’ will also change font weight and font color on hover.-->
+
+    </head>
+    <!-- white background color -->
+    <body class="bg-light">
+        <!-- style for top navigation bar -->
+        <header class="navbar navbar-secondary bg-white px-3 py-4 d-flex align-items-center justify-content-between">
+
+            <!-- Hamburger menu and Overview title on the left side -->
+            <div class="d-flex align-items-center gap-3">
+              <!-- hamburger menu appear only on the mobile screen and hide on the desktop -->
+                <button class="navbar-toggler border-0 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <h5 class="title">Overview</h5>
+            </div>
+          
+            <!-- search icon, notification icon and user profile picture -->
+            <div class="d-flex align-items-center gap-3">
+                <button class="btn btn-link text-secondary me-2"><i class="bi bi-search fs-6"></i></button>
+                <button class="btn btn-link text-secondary me-2"><i class="bi bi-bell-fill fs-6"></i></button>
+                <span class="d-none d-sm-inline text-secondary border-start border-2 border-secondary ps-3 ms-3">
+                    Nang Hlyke Mouk Khao
+                </span>
+                <img src="assets/images/user profile.jpg" alt="avatar" class="userProfile">
+            </div>
+        </header>
+        
+        <!-- sidebar pop up when toggler on mobile screen -->
+        <!-- using offcanvas to hide from desktop screen and offcanvas-start to mkae it slide from the left -->
+        <div class="sidebar-mobile offcanvas offcanvas-start" tabindex="-1" id="sidebar" data-bs-backdrop="static">
+            <!-- dashboard logo and close button -->
+            <div class="offcanvas-header">
+                <img src="assets/images/lettering-icon-logo-design-template_1141934-1491.avif" alt="Dashboard blue logo" class="rounded-circle me-2" width="35">
+                <h5 class="offcanvas-title text-secondary fs-6">Dashboard Kit</h5>
+                <!-- adding close button on mobile screen -->
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <!-- sidebar for mobile screen -->
+            <div class="offcanvas-body p-0">
+              <ul class="nav flex-column p-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary d-flex align-items-center"  href="#">
+                            <i class="bi bi-browser-edge me-3"></i>
+                            Overview
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary d-flex align-items-center"  href="#">
+                            <i class="bi bi-ticket-perforated me-3"></i>
+                            Tickets
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary d-flex align-items-center"  href="#">
+                            <i class="bi bi-lightbulb me-3"></i>
+                            Ideas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary d-flex align-items-center"  href="#">
+                            <i class="bi bi-people me-3"></i>
+                            Contacts
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary d-flex align-items-center"  href="#">
+                            <i class="bi bi-person-gear me-3"></i>
+                            Agents
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary d-flex align-items-center"  href="#">
+                            <i class="bi bi-journal-text me-3"></i>
+                            Articles
+                        </a>
+                    </li>
+
+                    <!-- add a line -->
+                    <hr class="border-secondary my-4">
+
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary d-flex align-items-center"  href="#">
+                            <i class="bi bi-gear me-3"></i>
+                            Setting
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary d-flex align-items-center"  href="#">
+                            <i class="bi bi-award me-3"></i>
+                            Subscription
+                        </a>
+                    </li>
+              </ul>
+            </div>
+        </div>
+
+        <!-- siderbar stick on the left side of the screen on desktop -->
+        <aside class="sidebar-desktop">
+            <div class="p-4">
+                <div class="d-flex align-items-center mb-5">
+                    <img src="assets/images/lettering-icon-logo-design-template_1141934-1491.avif" alt="Dashboard blue logo" class="rounded-circle me-2" width="35">
+                    <h5 class="mb-0 fs-5 text-secondary">Dashboard Kit</h5>
+                </div>
+
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary d-flex align-items-center"  href="#">
+                            <i class="bi bi-browser-edge me-3"></i>
+                            Overview
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary d-flex align-items-center"  href="#">
+                            <i class="bi bi-ticket-perforated me-3"></i>
+                            Tickets
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary d-flex align-items-center"  href="#">
+                            <i class="bi bi-lightbulb me-3"></i>
+                            Ideas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary d-flex align-items-center"  href="#">
+                            <i class="bi bi-people me-3"></i>
+                            Contacts
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary d-flex align-items-center"  href="#">
+                            <i class="bi bi-person-gear me-3"></i>
+                            Agents
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary d-flex align-items-center"  href="#">
+                            <i class="bi bi-journal-text me-3"></i>
+                            Articles
+                        </a>
+                    </li>
+    
+                    <!-- add a line -->
+                    <hr class="border-secondary">
+    
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary d-flex align-items-center"  href="#">
+                            <i class="bi bi-gear me-3"></i>
+                            Setting
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary d-flex align-items-center"  href="#">
+                            <i class="bi bi-award me-3"></i>
+                            Subscription
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- 4 cards using default bootstrap -->
+        <main class="mainContent">
+            <div class="container text-center my-4">
+                <div class="row g-3 g-md-5 justify-content-center">
+            
+                  <!-- Unresolved -->
+                  <div class="col-6 col-md-3">
+                    <div class="card">
+                      <div class="text-muted small fw-medium">Unresolved</div>
+                      <div class="display-6 fw-bold mt-1">60</div>
+                    </div>
+                  </div>
+            
+                  <!-- Overdue -->
+                  <div class="col-6 col-md-3">
+                    <div class="card">
+                      <div class="text-muted small fw-medium">Overdue</div>
+                      <div class="display-6 fw-bold mt-1">16</div>
+                    </div>
+                  </div>
+            
+                  <!-- Open -->
+                  <div class="col-6 col-md-3">
+                    <div class="card">
+                      <div class="text-muted small fw-medium">Open</div>
+                      <div class="display-6 fw-bold mt-1">43</div>
+                    </div>
+                  </div>
+
+                  <!-- On Hold -->
+                    <div class="col-6 col-md-3">
+                        <div class="card">
+                        <div class="text-muted small fw-medium">On hold</div>
+                        <div class="display-6 fw-bold mt-1">64</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Today's trend section -->
+            <div class="container">
+                <div class="row g-0">
+                    <!-- Chart Card -->
+                    <div class="col-12 col-lg-8">
+                        <div class="card h-100 shadow-sm border">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                    <!-- adding title and then date -->
+                                    <div class="cardtitle">
+                                        <h5 class="card-title mb-1 fw-bold">Today's trends</h5>
+                                        <p class="text-muted mb-0">as of 25 May 2019, 09:41 PM</p>
+                                    </div>
+
+                                    <div class="trend d-flex align-items-center gap-2">
+                                        <span class="d-sm-inline text-secondary border-start border-2 border-primary ps-3 ms-1">
+                                        Today
+                                        </span>
+                                        <span class="d-sm-inline text-secondary border-start border-2 border-secondary ps-3 ms-1">
+                                        Yesterday
+                                        </span>
+                                    </div>
+                                </div>
+                                
+                                <!-- adding chart image -->
+                                <div class="chart-container">
+                                    <img src="assets/images/Screenshot 2025-11-11 at 11.12.28 PM.png" alt="Today's trends chart" class="img-fluid w-100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Column beside the trend chart  -->
+                    <div class="col-12 col-lg-4">
+                        <div class=" h-100 d-flex flex-column">
+                            <!-- Resolved card -->
+                            <div class="dataCard stat-item p-4 bg-white rounded-3 text-center">
+                                <p class="stats">Resolved</p>
+                                <h3 class="mb-0 fw-bold">449</h3>
+                            </div>
+                                
+                            <!-- Received card -->
+                            <div class="dataCard stat-item p-4 bg-white rounded-3 shadow-sm text-center">
+                                <p class="stats">Received</p>
+                                <h3 class="mb-0 fw-bold">426</h3>
+                            </div>
+
+                            <!-- Average first respond time -->
+                            <div class="dataCard stat-item p-4 bg-white rounded-3 shadow-sm text-center">
+                                <p class="stats">Average first response time</p>
+                                <h3 class="mb-0 fw-bold">33m</h3>
+                            </div>
+
+                            <div class="dataCard stat-item p-4 bg-white rounded-3 shadow-sm text-center">
+                                <p class="stats">Average response time</p>
+                                <h3 class="mb-0 fw-bold">3h 8m</h3>
+                            </div>
+
+                            <div class="dataCard stat-item p-4 bg-white rounded-3 shadow-sm text-center">
+                                <p class="stats">Resoultion with SLA</p>
+                                <h3 class="mb-0 fw-bold">94%</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Unresolved Tickets and Tasks section-->
+            <div class="row g-4 mx-0 my-3">
+                <!-- Unresolved Tickets section (let card) -->
+                <div class="col-12 col-md-6 ">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center border-0 pt-4">
+                            <h5 class="mb-0 fw-bold">Unresolved tickets</h5>
+                            <!-- Navigation link to view detail -->
+                            <a href="#" class="text-primary small fw-medium">View details</a>
+                        </div>
+
+                        <div class="card-body pt-2">
+                            <p class="text-muted small mb-4">Group: support</p>
+
+                            <div class="ticket-row d-flex justify-content-between align-items-start mb-3">
+                                <p class="text-muted mb-0">Waiting on Feature Requests</p>
+                                <p class="text-muted mb-0">4238</p>
+                            </div>
+                            <hr class="border-secondary my-3">
+                            <div class="ticket-row d-flex justify-content-between align-items-start mb-3">
+                                <p class="text-muted mb-0">Awaiting Customer Respone</p>
+                                <p class="text-muted mb-0">1005</p>
+                            </div>
+                            <hr class="border-secondary my-3">
+                            <div class="ticket-row d-flex justify-content-between align-items-start mb-3">
+                                <p class="text-muted mb-0">Awaiting Developer Fix</p>
+                                <p class="text-muted mb-0">914</p>
+                            </div>
+                            <hr class="border-secondary my-3">
+                            <div class="ticket-row d-flex justify-content-between align-items-start mb-3">
+                                <p class="text-muted mb-0">Pending</p>
+                                <p class="text-muted mb-0">281</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tasks section (right card)-->
+                <div class="col-12 col-md-6 ">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center border-0 pt-4">
+                            <h5 class="mb-0 fw-bold">Tasks</h5>
+                            <!-- Navigation link to view detail -->
+                            <a href="#" class="text-primary small fw-medium">View all</a>
+                        </div>
+
+                        <div class="card-body pt-2 align-items-start justify-content-between">
+                            <p class="text-muted small mb-4">Today</p>
+                        
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <p class="text-muted mb-0">Create new task</p>
+                                <i class="bi bi-plus-square-fill"></i>
+                            </div>
+
+                            <!-- Adding a radio button so the user can select this task  -->
+                            <div class="form-check d-flex justify-content-between align-items-center">
+                                <div>
+                                    <input class="form-check-input me-2" type="radio" name="task" id="task1">
+                                    <label class="form-check-label text-secondary" for="task1">Finish ticket update</label>
+                                </div>
+                                <p class="badge bg-warning text-light rounded-pill px-3 py-1">URGENT</p>
+                            </div>
+
+                            <hr class="border-secondary my-3">
+
+                            <div class="form-check d-flex justify-content-between align-items-center">
+                                <div>
+                                    <input class="form-check-input me-2" type="radio" name="task" id="task2">
+                                    <label class="form-check-label text-secondary" for="task2">Create new ticket example</label>
+                                </div>
+                                <p class="badge bg-success text-light rounded-pill px-3 py-1">NEW</p>
+                            </div>
+
+                            <hr class="border-secondary my-3">
+
+                            <div class="form-check d-flex justify-content-between align-items-center">
+                                <div>
+                                    <input class="form-check-input me-2" type="radio" name="task" id="task3">
+                                    <label class="form-check-label text-secondary" for="task23">Update ticket report</label>
+                                </div>
+                                <p class="badge bg-secondary text-light rounded-pill px-3 py-1">DEFAULT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </main>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <!-- Your Custom JS -->
+        <script src="script.js"></script>
+    </body>
+</html>
