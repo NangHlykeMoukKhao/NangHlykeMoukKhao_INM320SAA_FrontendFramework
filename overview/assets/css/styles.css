@@ -90,6 +90,7 @@ body {
   font-weight: 600;
 }
 
+/* for desktop style */
 @media (min-width: 850px) {
   .sidebar-desktop {
     display: block;
