@@ -89,7 +89,7 @@ body {
   color: rgb(99, 111, 244) !important;
   font-weight: 600;
 }
-
+/* adding desktop and mobile style */
 /* for desktop style */
 @media (min-width: 850px) {
   .sidebar-desktop {
